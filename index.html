@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../firstexam/style.css">
+  <title>الاختبار القبلي</title>
+</head>
+<body>
+
+  <h1>الاختبار القبلي - كمبيوتر</h1>
+
+  <form id="quizForm">
+    <!-- السؤال 1 -->
+    <div class="question">
+      <p>1. ما هو الحاسوب (الكمبيوتر)؟</p>
+      <label><input type="radio" name="q1" value="أ"> جهاز للتسلية فقط</label><br>
+      <label><input type="radio" name="q1" value="ب"> جهاز يُستخدم لمعالجة البيانات وتحويلها لمعلومات</label><br>
+      <label><input type="radio" name="q1" value="ج"> تلفزيون ذكي</label><br>
+      <label><input type="radio" name="q1" value="د"> أداة للرسم فقط</label>
+    </div>
+
+    <!-- السؤال 2 -->
+    <div class="question">
+      <p>2. أي من التالي يُعتبر من مكونات الهاردوير؟</p>
+      <label><input type="radio" name="q2" value="أ"> نظام التشغيل ويندوز</label><br>
+      <label><input type="radio" name="q2" value="ب"> لوحة المفاتيح</label><br>
+      <label><input type="radio" name="q2" value="ج"> برنامج الفوتوشوب</label><br>
+      <label><input type="radio" name="q2" value="د"> ملفات PDF</label>
+    </div>
+
+    <!-- السؤال 3 -->
+    <div class="question">
+      <p>3. ما الفرق بين الهاردوير والسوفتوير؟</p>
+      <label><input type="radio" name="q3" value="أ"> الهاردوير برامج، والسوفتوير قطع مادية</label><br>
+      <label><input type="radio" name="q3" value="ب"> الهاردوير يُستخدم على الإنترنت فقط</label><br>
+      <label><input type="radio" name="q3" value="ج"> الهاردوير هو الجزء المادي، والسوفتوير هو البرامج</label><br>
+      <label><input type="radio" name="q3" value="د"> لا يوجد فرق</label>
+    </div>
+
+    <!-- السؤال 4 -->
+    <div class="question">
+      <p>4. ما هي وظيفة المعالج (CPU)؟</p>
+      <label><input type="radio" name="q4" value="أ"> تخزين البيانات</label><br>
+      <label><input type="radio" name="q4" value="ب"> عرض الصور</label><br>
+      <label><input type="radio" name="q4" value="ج"> تنفيذ الأوامر ومعالجة البيانات</label><br>
+      <label><input type="radio" name="q4" value="د"> توصيل الإنترنت</label>
+    </div>
+
+    <!-- السؤال 5 -->
+    <div class="question">
+      <p>5. ما هو نظام التشغيل؟</p>
+      <label><input type="radio" name="q5" value="أ"> قطعة داخل الجهاز</label><br>
+      <label><input type="radio" name="q5" value="ب"> برنامج يربط المستخدم بالجهاز</label><br>
+      <label><input type="radio" name="q5" value="ج"> تطبيق للرسم</label><br>
+      <label><input type="radio" name="q5" value="د"> كابل كهرباء</label>
+    </div>
+
+    <!-- زر الإرسال -->
+    <button type="submit">إرسال الإجابات</button>
+  </form>
+
+  <!-- هنا هنضيف النتيجة وزر التقدم بعدين -->
+  <div id="result"></div>
+  <div id="nextBtnContainer"></div>
+<script src="main.js" ></script>
+</body>
+</html>
