@@ -1,68 +1,155 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../firstexam/style.css">
-  <title>الاختبار القبلي</title>
+	<title>Project</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.37.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../webLEaning/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+
+   
 </head>
+
 <body>
 
-  <h1>الاختبار القبلي - كمبيوتر</h1>
+    <div class="contanier">
+  
+        <nav>
+            
+            <label for="motherboard-links">Go to Section</label>
 
-  <form id="quizForm">
-    <!-- السؤال 1 -->
-    <div class="question">
-      <p>1. ما هو الحاسوب (الكمبيوتر)؟</p>
-      <label><input type="radio" name="q1" value="أ"> جهاز للتسلية فقط</label><br>
-      <label><input type="radio" name="q1" value="ب"> جهاز يُستخدم لمعالجة البيانات وتحويلها لمعلومات</label><br>
-      <label><input type="radio" name="q1" value="ج"> تلفزيون ذكي</label><br>
-      <label><input type="radio" name="q1" value="د"> أداة للرسم فقط</label>
+            <div class="option1">
+                <a href="#scetion1">motherboard</a>
+            </div>
+
+            <div class="option2">
+                <a href="#section2">kinds of motherboard</a>
+            </div>
+
+            <div class="option3">
+                <a href="#scetion3">Input Devices</a>
+            </div>
+
+            <div class="option4">
+                <a href="#scetion4">output Devices</a>
+            </div>
+
+            <div class="option5">
+                <a href="#scetion5">camera</a>
+            </div>
+
+            <div class="option6">
+                <a href="#scetion6">Kind of camera</a>
+            </div>
+
+            <div class="option7">
+                <a href="#scetion7">finall</a>
+            </div>
+
+
+            
+
+        </nav>
+
+        
+        <main>
+            <div class="cont" id="scetion1">
+              <p class="center" >What is The Motherboard</p>
+
+           
+                <div class="rgbhn">
+                  <div class="model">
+                    <model-viewer src="../model2/scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls>
+                </div>
+
+                <div class="right">
+                    <div class="texts">
+                        <p>The motherboard is the main circuit board inside a computer.
+                            It connects all the components together—like the CPU, RAM, storage, graphics card, and power supply—so they can talk to each other and work as one system.
+                            
+                            It’s basically the central nervous system of your PC.</p>
+                    </div>
+    
+                    <audio src="../vioes/ElevenLabs_2025-04-08T06_57_52_Will_pre_sp100_s50_sb75_se0_b_m2.mp3" controls></audio>
+                </div>
+                </div>
+            </div>
+
+            <div class="ert" id="section2">
+              <div class="container-TWO">
+                <p class="center" >Kinds of Motherboard</p>
+                <div class="slides">
+                  <div class="slide" id="slide1">
+                    <div class="posit">
+                      <model-viewer class="model-first" src="../model3/scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls></model-viewer>
+                      <h2>Motherboard Types</h2>
+                      <p>There are several types of motherboards, each designed for different purposes and form factors. Here are some common types:</p>
+                    </div>
+                  </div>
+                  <div class="slide" id="slide2">
+                    <div class="posit">
+                      <model-viewer class="model-first" src="../model4/scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls></model-viewer>
+                      <h3>ATX (Advanced Technology eXtended)</h3>
+                      <p>The most common motherboard size, used in standard desktop computers. It offers a good balance of features and expandability.</p>
+                    </div>
+                  </div>
+                  <!-- المزيد من الشرائح هنا -->
+                </div>
+              </div>
+            
+              <button class="arrow" id="prev1">&#10094;</button>
+              <button class="arrow" id="next1">&#10095;</button>
+            </div>
+            
+            <!-- القسم الثاني -->
+            <div class="ert" id="scetion3">
+              <div class="container-TWO">
+                <p class="center" >input devices</p>
+                <div class="slides">
+                  <div class="slide" id="slide1">
+                    <div class="posit">
+                      <model-viewer class="model-first" src="../model3/scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls></model-viewer>
+                      <h2>Motherboard Types</h2>
+                      <p>There are several types of motherboards, each designed for different purposes and form factors. Here are some common types:</p>
+                    </div>
+                  </div>
+                  <div class="slide" id="slide2">
+                    <div class="posit">
+                      <model-viewer class="model-first" src="../model4/scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls></model-viewer>
+                      <h3>ATX (Advanced Technology eXtended)</h3>
+                      <p>The most common motherboard size, used in standard desktop computers. It offers a good balance of features and expandability.</p>
+                    </div>
+                  </div>
+                  <!-- المزيد من الشرائح هنا -->
+                </div>
+              </div>
+            
+              <button class="arrow" id="prev2">&#10094;</button>
+              <button class="arrow" id="next2">&#10095;</button>
+            </div>
+            
+
+
+      
+
+          
+          
+        </main>
     </div>
 
-    <!-- السؤال 2 -->
-    <div class="question">
-      <p>2. أي من التالي يُعتبر من مكونات الهاردوير؟</p>
-      <label><input type="radio" name="q2" value="أ"> نظام التشغيل ويندوز</label><br>
-      <label><input type="radio" name="q2" value="ب"> لوحة المفاتيح</label><br>
-      <label><input type="radio" name="q2" value="ج"> برنامج الفوتوشوب</label><br>
-      <label><input type="radio" name="q2" value="د"> ملفات PDF</label>
-    </div>
+	  <script type="module"
+		  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+	  </script>
 
-    <!-- السؤال 3 -->
-    <div class="question">
-      <p>3. ما الفرق بين الهاردوير والسوفتوير؟</p>
-      <label><input type="radio" name="q3" value="أ"> الهاردوير برامج، والسوفتوير قطع مادية</label><br>
-      <label><input type="radio" name="q3" value="ب"> الهاردوير يُستخدم على الإنترنت فقط</label><br>
-      <label><input type="radio" name="q3" value="ج"> الهاردوير هو الجزء المادي، والسوفتوير هو البرامج</label><br>
-      <label><input type="radio" name="q3" value="د"> لا يوجد فرق</label>
-    </div>
+	<script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+	</script>
+    
 
-    <!-- السؤال 4 -->
-    <div class="question">
-      <p>4. ما هي وظيفة المعالج (CPU)؟</p>
-      <label><input type="radio" name="q4" value="أ"> تخزين البيانات</label><br>
-      <label><input type="radio" name="q4" value="ب"> عرض الصور</label><br>
-      <label><input type="radio" name="q4" value="ج"> تنفيذ الأوامر ومعالجة البيانات</label><br>
-      <label><input type="radio" name="q4" value="د"> توصيل الإنترنت</label>
-    </div>
-
-    <!-- السؤال 5 -->
-    <div class="question">
-      <p>5. ما هو نظام التشغيل؟</p>
-      <label><input type="radio" name="q5" value="أ"> قطعة داخل الجهاز</label><br>
-      <label><input type="radio" name="q5" value="ب"> برنامج يربط المستخدم بالجهاز</label><br>
-      <label><input type="radio" name="q5" value="ج"> تطبيق للرسم</label><br>
-      <label><input type="radio" name="q5" value="د"> كابل كهرباء</label>
-    </div>
-
-    <!-- زر الإرسال -->
-    <button type="submit">إرسال الإجابات</button>
-  </form>
-
-  <!-- هنا هنضيف النتيجة وزر التقدم بعدين -->
-  <div id="result"></div>
-  <div id="nextBtnContainer"></div>
-<script src="main.js" ></script>
+  <script src="../webLEaning/main.js"></script>
+    
 </body>
+
 </html>

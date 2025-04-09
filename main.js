@@ -1,78 +1,63 @@
-const correctAnswers = {
-    q1: 'ب',
-    q2: 'ب',
-    q3: 'ج',
-    q4: 'ج',
-    q5: 'ب'
-  };
-  
-  document.getElementById("quizForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-  
-    let score = 0;
-    let total = Object.keys(correctAnswers).length;
-  
-    // قفل التعديلات على الراديو
-    const radios = document.querySelectorAll('input[type="radio"]');
-    radios.forEach(radio => radio.disabled = true);
-  
-    // التأكد إن كل الأسئلة متجاوب عليها
-    let allAnswered = true;
-    for (let key in correctAnswers) {
-      const selected = document.querySelector(`input[name="${key}"]:checked`);
-      if (!selected) {
-        allAnswered = false;
-        break;
-      }
+// Section 2
+let currentSlide2 = 0;
+const slides2 = document.querySelectorAll('#section2 .slide');
+const prev2 = document.getElementById('prev1');
+const next2 = document.getElementById('next1');
+
+function showSlide2(index) {
+    if (index < 0) {
+        currentSlide2 = slides2.length - 1;
+    } else if (index >= slides2.length) {
+        currentSlide2 = 0;
     }
-  
-    if (!allAnswered) {
-      alert("يرجى الإجابة على جميع الأسئلة قبل الإرسال");
-      // فك قفل الراديو علشان الطالب يقدر يكمّل
-      radios.forEach(radio => radio.disabled = false);
-      return;
+    slides2.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === currentSlide2) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+prev2.addEventListener('click', () => {
+    currentSlide2--;
+    showSlide2(currentSlide2);
+});
+
+next2.addEventListener('click', () => {
+    currentSlide2++;
+    showSlide2(currentSlide2);
+});
+
+showSlide2(currentSlide2);
+
+// Section 3 (Separate Navigation)
+let currentSlide3 = 0;
+const slides3 = document.querySelectorAll('#scetion3 .slide');
+const prev3 = document.getElementById('prev2');
+const next3 = document.getElementById('next2');
+
+function showSlide3(index) {
+    if (index < 0) {
+        currentSlide3 = slides3.length - 1;
+    } else if (index >= slides3.length) {
+        currentSlide3 = 0;
     }
-  
-    // حساب الدرجة فقط، بدون عرض الإجابات الصح أو الغلط
-    for (let key in correctAnswers) {
-      const selected = document.querySelector(`input[name="${key}"]:checked`);
-      if (selected && selected.value === correctAnswers[key]) {
-        score++;
-      }
-    }
-  
-    // عرض النتيجة
-    let msg = "";
-    if (score === total) {
-      msg = "ممتاز! معلوماتك قوية جدًا 👏";
-    } else if (score >= 3) {
-      msg = "مستواك جيد، بس لسه في حاجات ممكن تتعلمها 💪";
-    } else {
-      msg = "واضح إنك محتاج تبدأ من الأساس، وإحنا معاك خطوة بخطوة 👨‍🏫";
-    }
-  
-    document.getElementById("result").textContent = `عدد الإجابات الصحيحة: ${score} من ${total} - ${msg}`;
-  
-    // إخفاء زر الإرسال
-    e.target.querySelector("button").disabled = true;
-  
-    // عرض زر "التقدّم الآن" بعد 3 ثواني
-    setTimeout(() => {
-      document.getElementById("nextBtnContainer").innerHTML = `
-        <button id="goBtn">التقدّم الآن</button>
-        <div id="loader" style="display:none; margin-top: 10px;"></div>
-        <div id="loaderr" style="display:none; font-weight:bold;">جاري التحميل...</div>
-      `;
-  
-      document.getElementById("goBtn").addEventListener("click", function () {
-        this.style.display = "none";
-        document.getElementById("loader").style.display = "block";
-        document.getElementById("loaderr").style.display = "block";
-  
-        setTimeout(() => {
-          window.location.href = "../webInter/index.html";
-        }, 2000);
-      });
-    }, );
-  });
-  
+    slides3.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === currentSlide3) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+prev3.addEventListener('click', () => {
+    currentSlide3--;
+    showSlide3(currentSlide3);
+});
+
+next3.addEventListener('click', () => {
+    currentSlide3++;
+    showSlide3(currentSlide3);
+});
+
+showSlide3(currentSlide3);
